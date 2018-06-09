@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <com.harsh2011.tensorflowcomputercnn.views.DrawView
+        android:id="@+id/draw"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            />
+
+        <Button
+            android:id="@+id/btn_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="folder name"
+        android:id="@+id/folder"/>
+
+    <TextView
+        android:id="@+id/tfRes"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingLeft="10dp"
+        android:text="Data is being stored in the dataset/'foldername'"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>
